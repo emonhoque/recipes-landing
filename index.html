@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en" class="bg-[#101915] text-[#e6f4ea]">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>recipz - Find It. Tweak It. Cook It.</title>
+  <meta name="description" content="A better way to discover, customize, and share recipes. Coming soon.">
+  <meta property="og:title" content="recipz - Find It. Tweak It. Cook It.">
+  <meta property="og:description" content="A better way to discover, customize, and share recipes. Coming soon.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://recipz.co">
+  <link rel="stylesheet" href="./assets/output.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="icon" type="image/png" href="assets/icon.png" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" referrerpolicy="no-referrer" />
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      min-height: 100vh;
+      background: radial-gradient(ellipse at 50% 30%, #183a1d 60%, #101915 100%);
+    }
+    .card {
+      background: rgba(20, 30, 23, 0.98);
+      border-radius: 2rem;
+      box-shadow: 0 8px 32px 0 rgba(16, 25, 21, 0.45);
+      padding: 2rem 1rem;
+      max-width: 98vw;
+      margin: 1.5rem auto;
+      width: 100%;
+      transition: max-width 0.2s;
+    }
+    @media (min-width: 640px) {
+      .card {
+        padding: 2.5rem 2rem;
+        max-width: 480px;
+      }
+    }
+    @media (min-width: 1024px) {
+      .card {
+        max-width: 700px;
+        padding: 3rem 3rem;
+      }
+    }
+    .feature-card {
+      background: rgba(34, 51, 39, 0.95);
+      border-radius: 1rem;
+      box-shadow: 0 2px 8px 0 rgba(34, 51, 39, 0.15);
+      padding: 1.2rem 1rem;
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      margin-bottom: 1rem;
+      width: 100%;
+    }
+    @media (min-width: 1024px) {
+      .features-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 1.5rem;
+      }
+      .feature-card {
+        margin-bottom: 0;
+      }
+    }
+    .feature-icon {
+      width: 2.5rem;
+      height: 2.5rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: #183a1d;
+      color: #7be495;
+      border-radius: 50%;
+      font-size: 1.5rem;
+      border: 2px solid #4e944f;
+      flex-shrink: 0;
+    }
+    .accent {
+      color: #7be495;
+    }
+    .btn-accent {
+      background: linear-gradient(90deg, #4e944f 0%, #7be495 100%);
+      color: #101915;
+      font-weight: 600;
+      border-radius: 0.75rem;
+      padding: 0.75rem 2rem;
+      box-shadow: 0 2px 8px 0 rgba(34, 51, 39, 0.15);
+      transition: background 0.2s, color 0.2s, transform 0.2s;
+      width: 100%;
+      font-size: 1rem;
+    }
+    .btn-accent:hover {
+      background: linear-gradient(90deg, #7be495 0%, #4e944f 100%);
+      color: #183a1d;
+      transform: scale(1.04);
+    }
+    .input-dark {
+      background: #101915;
+      color: #e6f4ea;
+      border: 1.5px solid #4e944f;
+      border-radius: 0.5rem;
+      padding: 0.7rem 1rem;
+      width: 100%;
+      margin-bottom: 1rem;
+      font-size: 1rem;
+    }
+    .input-dark::placeholder {
+      color: #7be495bb;
+    }
+    @media (min-width: 640px) {
+      .input-dark {
+        font-size: 1.1rem;
+      }
+      .btn-accent {
+        font-size: 1.1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main class="flex flex-col items-center justify-center min-h-[90vh] px-2">
+    <section class="card">
+      <div class="flex flex-col items-center mb-6">
+        <img src="assets/icon.png" alt="Recipz Icon" class="w-25 h-25 mb-2 drop-shadow-lg" />
+        <img src="assets/logo.png" alt="recipz logo" class="h-15 mb-2" />
+        <h1 class="text-2xl font-bold mb-1 accent text-center">Find It. Tweak It. Cook It.</h1>
+        <p class="text-[#b7cbb0] text-center mb-4 text-base">A better way to discover, customize, and share recipes. <br> No clutter, no distractions, just food inspiration.</p>
+      </div>
+      <div class="features-grid mb-6">
+        <div class="feature-card">
+          <div class="feature-icon">🔍</div>
+          <div>
+            <div class="font-semibold accent">Extract recipes</div>
+            <div class="text-xs text-[#b7cbb0]">Clean, ad-free, and fast</div>
+          </div>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">✏️</div>
+          <div>
+            <div class="font-semibold accent">Remix & share</div>
+            <div class="text-xs text-[#b7cbb0]">Customize and share your favorites</div>
+          </div>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">📱</div>
+          <div>
+            <div class="font-semibold accent">Works offline</div>
+            <div class="text-xs text-[#b7cbb0]">PWA experience</div>
+          </div>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">🏠</div>
+          <div>
+            <div class="font-semibold accent">Organize recipes</div>
+            <div class="text-xs text-[#b7cbb0]">Public & private collections</div>
+          </div>
+        </div>
+      </div>
+      <a href="https://www.linkedin.com/in/emon-hoque/" target="_blank" rel="noopener" class="block text-center accent font-semibold mt-2 mb-4"><button type="submit" class="btn-accent">Follow The Journey</button></a>
+      <div class="text-xs text-[#b7cbb0] text-center mt-2">
+        <strong>Currently in development</strong> — Launching soon!<br><br>
+        Built with <span class="accent font-medium">React</span>, <span class="accent font-medium">Flask</span>, <span class="accent font-medium">Firebase</span>, <span class="accent font-medium">Tailwind CSS</span>
+        <br><button id="learnMoreBtn" class="ml-2 underline accent hover:text-[#4e944f] focus:outline-none">See Full Tech Stack</button>
+      </div>
+    </section>
+    <div class="flex flex-col items-center mt-6 mb-2 w-full px-2">
+      <div class="bg-[#16281d] rounded-2xl px-4 py-5 w-full max-w-xs mx-auto flex flex-row justify-center items-center gap-4">
+        <a href="https://emontofazzal.com/" target="_blank" rel="noopener" class="flex flex-col items-center group">
+          <i class="fa-solid fa-user-circle text-2xl text-[#7be495]"></i>
+          <span class="accent font-medium text-xs mt-1 group-hover:underline">Portfolio</span>
+        </a>
+        <a href="https://github.com/emonhoque/" target="_blank" rel="noopener" class="flex flex-col items-center group">
+          <i class="fa-brands fa-github text-2xl text-[#7be495]"></i>
+          <span class="accent font-medium text-xs mt-1 group-hover:underline">GitHub</span>
+        </a>
+        <a href="https://www.linkedin.com/in/emon-hoque/" target="_blank" rel="noopener" class="flex flex-col items-center group">
+          <i class="fa-brands fa-linkedin text-2xl text-[#7be495]"></i>
+          <span class="accent font-medium text-xs mt-1 group-hover:underline">LinkedIn</span>
+        </a>
+        <a href="mailto:me@emontofazzal.com" class="flex flex-col items-center group">
+          <i class="fa-solid fa-envelope text-2xl text-[#7be495]"></i>
+          <span class="accent font-medium text-xs mt-1 group-hover:underline">Email</span>
+        </a>
+      </div>
+    </div>
+    <div id="learnMoreModal" class="fixed inset-0 z-50 flex items-center justify-center bg-black/60 hidden">
+      <div class="bg-[#18251d] rounded-2xl shadow-2xl max-w-lg w-[90vw] p-6 relative animate-fade-in">
+        <button id="closeModalBtn" class="absolute top-3 right-3 text-[#7be495] text-2xl font-bold hover:text-[#4e944f] focus:outline-none">&times;</button>
+        <h2 class="text-xl font-bold mb-3 accent">recipz Tech Stack & Deployment</h2>
+        <ul class="text-sm space-y-2 mb-2">
+          <li><span class="font-semibold accent">Frontend:</span> React (Create React App) + Tailwind CSS + RadixUI/ShadCN + React Router</li>
+          <li><span class="font-semibold accent">Backend:</span> Flask + Firebase Admin SDK + Firestore + BeautifulSoup + lxml</li>
+          <li><span class="font-semibold accent">Database:</span> Firebase Firestore</li>
+          <li><span class="font-semibold accent">Auth & Storage:</span> Firebase Auth + Firebase Storage</li>
+          <li><span class="font-semibold accent">Deployment:</span> Render (backend) + Cloudflare Pages (frontend)</li>
+          <li><span class="font-semibold accent">Scraping:</span> Python (requests + BeautifulSoup + lxml)</li>
+          <li><span class="font-semibold accent">API Style:</span> RESTful (Flask)</li>
+          <li><span class="font-semibold accent">PWA:</span> CRA + manifest.json + service workers + offline caching</li>
+          <li><span class="font-semibold accent">CI/CD:</span> Manual deploy to Render + Cloudflare (no third-party CI specified)</li>
+          <li><span class="font-semibold accent">SEO:</span> Canonical slug-first URLs + dynamic metadata + 301 redirects</li>
+        </ul>
+      </div>
+    </div>
+    <script>
+      const learnMoreBtn = document.getElementById('learnMoreBtn');
+      const learnMoreModal = document.getElementById('learnMoreModal');
+      const closeModalBtn = document.getElementById('closeModalBtn');
+      learnMoreBtn.addEventListener('click', () => {
+        learnMoreModal.classList.remove('hidden');
+      });
+      closeModalBtn.addEventListener('click', () => {
+        learnMoreModal.classList.add('hidden');
+      });
+      learnMoreModal.addEventListener('click', (e) => {
+        if (e.target === learnMoreModal) {
+          learnMoreModal.classList.add('hidden');
+        }
+      });
+      document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape') {
+          learnMoreModal.classList.add('hidden');
+        }
+      });
+    </script>
+  </main>
+  <div class="block sm:hidden h-1"></div>
+  <hr class="border-t border-[#223c2a] mx-auto w-1/2 sm:w-3/4 opacity-50 my-2" />
+  <footer class="w-full py-3 mt-2 text-center text-xs text-[#7be495] bg-transparent">
+    &copy; 2025 Emon Tofazzal. All rights reserved.
+  </footer>
+</body>
+</html>
