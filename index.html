@@ -14,10 +14,19 @@
   <link rel="icon" type="image/png" href="assets/icon.png" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" referrerpolicy="no-referrer" />
   <style>
+    html, body {
+      scrollbar-width: none;
+      -ms-overflow-style: none; 
+    }
+    html::-webkit-scrollbar, body::-webkit-scrollbar {
+      display: none;
+    }
     body {
       font-family: 'Poppins', sans-serif;
       min-height: 100vh;
       background: radial-gradient(ellipse at 50% 30%, #183a1d 60%, #101915 100%);
+      scrollbar-width: none;
+      -ms-overflow-style: none;
     }
     .card {
       background: rgba(20, 30, 23, 0.98);
